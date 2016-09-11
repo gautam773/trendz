@@ -1,0 +1,186 @@
+@CHARSET "ISO-8859-1";
+/*Signup page*/
+.error
+		{
+			color: #a94442;
+			background-color: #f2dede;
+			padding: 5px;
+			//margin-bottom: 20px;
+			border: 1px solid #ebccd1;
+			border-radius: 4px;
+		}
+		
+/*Silder*/
+.center
+{
+	margin: auto;
+	width:100px;
+	border:0px solid #73AD321;
+	box-shadow:2px 2px 20px #000000;
+}
+
+.center_img
+{
+	margin: auto;
+	width:100px;
+	border:0px solid #73AD321;
+}
+
+img
+{
+	display:block;
+	margin:auto;
+}
+
+#a
+{
+color:#FF6699;
+font-size:100px;
+font-family:Ravie;
+text-align:center;
+text-shadow:10px 10px 10px black;
+}
+#b
+{
+color:#FF6699;
+font-size:100px;
+font-family:Ravie;
+text-shadow:10px 10px 10px black;
+}
+#c
+{
+color:#FF6699;
+font-size:80px;
+font-family:Ravie;
+text-shadow:10px 10px 10px black;
+
+}
+
+#d
+{
+background-color:aqua
+
+}
+#e
+{
+background-color:#FFFF99
+font-size:25px;
+
+
+}
+#f
+{
+font-size:35px;
+text-align:right;
+font-style:Bold;
+}
+#g
+{
+text-shadow:10px 10px 10px black;
+color:pink;
+font-size:80px;
+font-family:Ravie;
+}
+#h
+{
+background-color:aqua;
+font-size:35px;
+}
+#i
+{
+
+font-size:50px;
+font-family:Ravie;
+text-shadow:5px 5px 5px #FFFF99;
+
+}
+#j
+{
+font-size:25px;
+color:black;
+}
+#k
+{
+font-size:20px;
+color:black;
+}
+#l
+{
+font-size:40px;
+color:#FF6699;
+text-shadow:10px 10px 10px #FFFF99;
+font-family:Ravie;
+}
+#m
+{
+background-color:aqua;
+font-size:25px;
+}
+#n
+{
+background-color:aqua;
+}
+#q
+{
+color:#FFFFCC;
+font-size:40px;
+font-family:Ravie;
+text-shadow:5px 5px 5px #FF6699;
+	
+}
+#o
+{
+font-size:40px;
+color:aqua;
+}
+#p
+{
+background-color:aqua;
+}
+h1 {  
+margin-left: 70px;  
+}  
+form li { 
+	
+background-color:aqua;
+list-style: none;  
+margin-bottom: 5px;  
+}  
+  
+form ul li label{  
+float: left;  
+clear: left;  
+width: 100px;  
+text-align: right;  
+margin-right: 10px;  
+font-family:Verdana, Arial, Helvetica, sans-serif;  
+font-size:14px;  
+}  
+  
+form ul li input, select, span {  
+float: left;  
+margin-bottom: 10px;  
+}  
+  
+form textarea {  
+float: left;  
+width: 350px;  
+height: 150px;  
+}  
+  
+[type="submit"] {  
+clear: left;  
+margin: 20px 0 0 230px;  
+font-size:18px  
+}  
+  
+p {  
+margin-left: 70px;  
+font-weight: bold;  
+}  
+
+
+
+
+
+
