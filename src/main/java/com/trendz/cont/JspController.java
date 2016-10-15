@@ -7,6 +7,8 @@ import javax.servlet.ServletContext;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.trendz.userrole.UserroleService;
+import com.trendz.userrole.Userrole;
 import com.trendz.user.User;
 import com.trendz.user.UserService;
 
@@ -23,20 +27,60 @@ public class JspController {
 
 	@Autowired
 	UserService us;
+
+	@Autowired
+	UserroleService urs;
+	
 	
 	
 	
 	@Autowired
 	ServletContext context;
 	
-	@RequestMapping("/")
-	public String index()
-	{
-		
-		System.out.println("At main page");
-		
-		return  ("index");
 	
+	@RequestMapping("/")
+	public String home()
+	{
+		Userrole r = urs.getUserRole(1);
+		
+		if( r == null )
+		{
+			Userrole urnew = new Userrole();
+			
+			urnew.setRole(1);
+			urnew.setRoleName("USER");
+			
+			urs.insert(urnew);
+		}
+		
+		r = urs.getUserRole(2);
+		
+		if( r == null )
+		{
+			Userrole urnew = new Userrole();
+			
+			urnew.setRole(2);
+			urnew.setRoleName("ADMIN");
+			
+			urs.insert(urnew);
+		}
+		
+		return ("index");
+	}
+	
+
+	public String test()
+	{
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+	    if (auth != null && !auth.getName().equals("anonymousUser"))
+	    {    
+	    	return "false";
+	    }
+	    else
+	    {
+	    	return "true";
+	    }
+		
 	}
 	@RequestMapping ("/head")
 	public String head()
@@ -65,6 +109,11 @@ public class JspController {
 	
 
 
+	@RequestMapping("/index")
+	public String index()
+	{
+		return ("index");
+	}
 	
 
 	@RequestMapping("/signup")
