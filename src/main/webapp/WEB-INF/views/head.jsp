@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
      <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
    <%@ page isELIgnored="false" %>
+   
+   
     <html>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -19,13 +21,32 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="${pageContext.request.contextPath}/product">Shirt</a></li>
-            <li><a href="${pageContext.request.contextPath}/product?search=T-Shirt">T-Shirt</a></li>
+            <li><a href="${pageContext.request.contextPath}/product">shirt</a></li>
+            <li><a href="${pageContext.request.contextPath}/product?search=T-Shirt">tshirt</a></li>
             <li><a href="${pageContext.request.contextPath}/product?search=Trousers"></a></li>
           </ul>
         </li>
         <li><a href="${pageContext.request.contextPath}/Contact Us"></a></li>
         <li><a href="${pageContext.request.contextPath}/About Us"> </a></li>
+       <%
+    					if (request.isUserInRole("ADMIN"))
+    						{
+    					%>  <li>
+							<a href="${pageContext.request.contextPath}/product">Manage Products</a>
+						<% 
+    						}
+						%>
+						</li>
+        <%
+    					if (request.isUserInRole("ADMIN"))
+    						{
+    					%>
+						<li>
+							<a href="${pageContext.request.contextPath}/category">Category</a>
+							<% 
+    						}
+						%>
+						</li>
       </ul>
       
 	      			<ul class="nav navbar-nav navbar-right">
@@ -39,12 +60,14 @@
 	      					</c:when>
 	      					
 	      					<c:otherwise>
-	      						<li><a href="${pageContext.request.contextPath}/login">Login</a></li>
+	      						<li><a href="${pageContext.request.contextPath}/loginpage">Login</a></li>
 				        		<li><a href="${pageContext.request.contextPath}/signup">Sign Up</a></li>
 				        		${isAdmin}
 	      					</c:otherwise>
 	      				</c:choose>
-						
+						<li>
+						<a href="${pageContext.request.contextPath}/cart" class="glyphicon glyphicon-shopping-cart">Cart</a>
+						</li>
 			        </ul>
     </div>
   </div>
@@ -52,5 +75,5 @@
 		
 <footer style="position: fixed; bottom: 0px; width: 100%; 
 background-color: #000000; color: #FFFFFF; text-align: center; height: 25px; z-index:200";>
-&copy; Agilaharshini
-</footer></html>
+&copy; Gtm Rockz
+</footer>

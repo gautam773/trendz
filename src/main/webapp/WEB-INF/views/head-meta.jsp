@@ -3,7 +3,7 @@
     <%@page isELIgnored="false" %>
     
 
-<title>Snack Corner</title>
+<title>Welcome to Trendz</title>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/references/css/bootstrap.min.css"/>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/references/css/snackcorner.css"/>
       

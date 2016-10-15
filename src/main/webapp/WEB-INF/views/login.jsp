@@ -8,13 +8,14 @@
 <head>
 	<c:import url="/head-meta"/>
 	<link rel="stylesheet" href="resources/references/css/bootstrap.min.css">
-	
-<div style="background-color:aqua; height:5px;"></div>
-<center><div style="background-color:VIOLET; height:90px;"><b id="g"><marquee>WELCOME</marquee></b></center> 
-<div style="background-color:aqua; height:5px;"></div>
+<style>
+.body{
+background-image: url(${pageContext.request.contextPath}/resources/images/bg.jpg);
+}
+</style>	
 
-<center><body style bgcolor="aqua">
-<body id="d" style bgcolor="aqua">
+
+
 
 	
 	
@@ -45,7 +46,7 @@
 	
 </head>
 
-<body>
+<body style=" background-image: url(${pageContext.request.contextPath}/resources/images/bg.jpg); ">
 
 	<script type="text/javascript" src="resources/references/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="resources/references/js/bootstrap.min.js"></script>

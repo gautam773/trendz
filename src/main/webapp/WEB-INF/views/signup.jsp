@@ -31,13 +31,13 @@
 						<p>${error}</p>
 					</div>
 				</c:if>
-<body id="d" >
+<body style=" background-image: url(${pageContext.request.contextPath}/resources/images/bg.jpg); ">
 				<form:form action="AddUser" method="POST" modelAttribute="User">
 					<table style="width: 80%;" class="table center">
 						
 						<tr>
 							<td><form:label path="username" for="username">Username:</form:label></td>
-							<td><form:input path="username" type="text"
+							<td><form:input path="username" type="text" autofocus="true"
 									class="form-control" id="username" /></td>
 							<td class="alert alert-danger"><form:errors path="username" /></td>
 						</tr>
@@ -59,7 +59,7 @@
 						<tr>
 							<td><form:label path="email" for="email">Email address:</form:label></td>
 							<td><form:input path="email" type="email"
-									class="form-control" id="email" autofocus="true" /></td>
+									class="form-control" id="email"  /></td>
 							<td class="alert alert-danger"><form:errors path="email" /></td>
 						</tr>
 						
