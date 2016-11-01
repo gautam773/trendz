@@ -22,7 +22,7 @@
     return {
     	
     	fetchAllItems: function(){
-                return $http.post('http://localhost:8081/trendz/flows/fetchAllItems/')
+                return $http.post('http://localhost:8086/trendz/flows/fetchAllItems/')
                         .then(
                                 function(response){
                                     return response.data;

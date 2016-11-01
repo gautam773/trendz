@@ -19,7 +19,7 @@
 	 
     	return {
     		getUserAddress: function(){
-                return $http.post('http://localhost:8081/trendz/flows/getUserAddress/')
+                return $http.post('http://localhost:8086/trendz/flows/getUserAddress/')
                         .then(
                                 function(response){
                                     return response.data;
@@ -32,7 +32,7 @@
         }
     		,
             updateAddresses: function(item){
-                    return $http.post('http://localhost:8081/trendz/flows/updateAddresses/', item)
+                    return $http.post('http://localhost:8086/trendz/flows/updateAddresses/', item)
                             .then(
                                     function(response){
                                         return response.data;

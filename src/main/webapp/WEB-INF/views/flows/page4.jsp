@@ -25,7 +25,7 @@
     	return {
          
     		deleteAllFromCart: function(item){
-                    return $http.post('http://localhost:8081/trendz/flows/deleteAllFromCart/', item)
+                    return $http.post('http://localhost:8086/trendz/flows/deleteAllFromCart/', item)
                             .then(
                                     function(response){
                                         return response.data;
@@ -56,7 +56,7 @@
 <div class="container">
   <a href="${pageContext.request.contextPath}/index" class="btn btn-success btn-lg btn pull-left">
   Home</a>
- 
+ <h1>Your order will be dispatched soon</h1>
   </div>
 <br>
 

@@ -74,19 +74,19 @@
                 <br>
                 <br>
 	                <div class="col-md-4">
-		                <a href="product?searchKey=Beds" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/7.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=tshirt" style="line-height: 340px; font-size: 140%; background-color: #CCCCCC;" >&nbsp; Tshirt &nbsp;</a> </div></a>
+		                <a href="product?search=tshirt" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/7.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="product?search=tshirt" style="line-height: 340px; font-size: 140%; background-color: #CCCCCC;" >&nbsp; Tshirt &nbsp;</a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">Tshirt makes your life more comfortable</p>
 	                </div>
 	                
 	                <div class="col-md-4">
-		                <a href="product?searchKey=Book+Shelves" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/6.jpg); background-size: 280px 220px;background-repeat: no-repeat;width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=shirt" style="line-height: 340px; font-size: 140%; background-color: #CCCCCC;" >&nbsp;Shirt&nbsp;</a> </div></a>
+		                <a href="product?search=shirt" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/6.jpg); background-size: 280px 220px;background-repeat: no-repeat;width: 280px ; height: 220px;" > <a align="center" href="product?search=shirt" style="line-height: 340px; font-size: 140%; background-color: #CCCCCC;" >&nbsp;Shirt&nbsp;</a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">Variety of shirts makes you really satisfied</p>
 	                </div>
 	                
 	                <div class="col-md-4">
-		                <a href="product?searchKey=Sofas" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/5.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="product?searchKey=trouser" style="line-height: 340px; font-size: 140%;background-color: #CCCCCC;" > &nbsp;Trousers&nbsp; </a> </div></a>
+		                <a href="product?search=trousers" ><div class="img-circle img-responsive nopadding center_img" style="background-image: url(resources/images/5.jpg); background-size: 280px 220px; width: 280px ; height: 220px;" > <a align="center" href="product?search=trouser" style="line-height: 340px; font-size: 140%;background-color: #CCCCCC;" > &nbsp;Trousers&nbsp; </a> </div></a>
 		                <br><br>
 		                <p style="font-weight: none; font-size: 12px; font-style: none; line-height: 20px;">Enjoy with the collection of trousers</p>
 	                </div>

@@ -18,14 +18,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="${pageContext.request.contextPath}/product">shirt</a></li>
-            <li><a href="${pageContext.request.contextPath}/product?search=T-Shirt">tshirt</a></li>
-            <li><a href="${pageContext.request.contextPath}/product?search=Trousers"></a></li>
-          </ul>
-        </li>
+        <li><a href="${pageContext.request.contextPath}/product">Products</a></li>
+         
         <li><a href="${pageContext.request.contextPath}/Contact Us"></a></li>
         <li><a href="${pageContext.request.contextPath}/About Us"> </a></li>
        <%
@@ -54,7 +48,7 @@
 	      				
 	      				<c:choose>
 	      					<c:when test="${not empty pageContext.request.userPrincipal}">
-	      						<li><span style="position: absolute; top: -5px; right: 5px; color: #FFFFFF;">${pageContext.request.userPrincipal.name}</span></li>
+	      						<li><span style="position: absolute; top: -5px; right: 5px; color: #FFFFFF;"><br>${pageContext.request.userPrincipal.name}</span></li>
 	      						<li><a href="${pageContext.request.contextPath}/logout">Log Out</a></li>
 	      						
 	      					</c:when>
@@ -65,9 +59,18 @@
 				        		${isAdmin}
 	      					</c:otherwise>
 	      				</c:choose>
-						<li>
+	      				<%
+    					if (request.isUserInRole("USER"))
+    						{
+    					%>  <li>
+							<li>
 						<a href="${pageContext.request.contextPath}/cart" class="glyphicon glyphicon-shopping-cart">Cart</a>
 						</li>
+						<% 
+    						}
+						%>
+					
+						
 			        </ul>
     </div>
   </div>

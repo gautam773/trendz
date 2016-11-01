@@ -291,6 +291,7 @@ Product pi = ps.getProductWithMaxId();
 	public ModelAndView AddUser(@Valid @ModelAttribute ("User") User i , BindingResult bind)
 	{
 		ModelAndView mav = new ModelAndView("signup");
+		ModelAndView mav1 = new ModelAndView("login");
 		
 		if( bind.hasErrors() )
 		{
@@ -325,6 +326,7 @@ Product pi = ps.getProductWithMaxId();
 					mav.addObject("User", new User());
 					
 					mav.addObject("success", "User Created Successfully");
+					return mav1;
 				}	
 				else
 				{

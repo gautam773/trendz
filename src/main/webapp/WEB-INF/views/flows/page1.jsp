@@ -20,7 +20,7 @@
                                   return {
                                    
                                       deleteFromCart: function(item){
-                                              return $http.post('http://localhost:8081/trendzflows/deleteFromCart/', item)
+                                              return $http.post('http://localhost:8086/trendz/flows/deleteFromCart/', item)
                                                       .then(
                                                               function(response){
                                                                   return response.data;
@@ -32,7 +32,7 @@
                                                       );
                                       },
                                               fetchAllItems: function(item){
-                                                  return $http.post('http://localhost:8081/trendz/flows/fetchAllItems/')
+                                                  return $http.post('http://localhost:8086/trendz/flows/fetchAllItems/')
                                                           .then(
                                                                   function(response){
                                                                       return response.data;

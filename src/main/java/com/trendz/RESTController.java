@@ -29,7 +29,7 @@ import com.trendz.user.UserService;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:8086", maxAge = 3600)
 public class RESTController {
 
 	@Autowired
